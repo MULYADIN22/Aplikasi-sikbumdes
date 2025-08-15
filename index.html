@@ -168,41 +168,44 @@
 
                     <!-- Financial Summary Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-                        <!-- Card Template -->
+                        <!-- Card 1: Aktiva -->
                         <div class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md flex items-center">
                             <div class="bg-teal-100 dark:bg-teal-800 p-4 rounded-full mr-4">
                                 <i class="fas fa-wallet fa-2x text-teal-500"></i>
                             </div>
-                            <div>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Total Aktiva</p>
-                                <p id="summary-aktiva" class="text-2xl font-bold">Rp 0</p>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 truncate">Total Aktiva</p>
+                                <p id="summary-aktiva" class="text-2xl font-bold truncate">Rp 0</p>
                             </div>
                         </div>
+                        <!-- Card 2: Pasiva -->
                          <div class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md flex items-center">
                             <div class="bg-blue-100 dark:bg-blue-800 p-4 rounded-full mr-4">
                                 <i class="fas fa-balance-scale fa-2x text-blue-500"></i>
                             </div>
-                            <div>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Total Pasiva</p>
-                                <p id="summary-pasiva" class="text-2xl font-bold">Rp 0</p>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 truncate">Total Pasiva</p>
+                                <p id="summary-pasiva" class="text-2xl font-bold truncate">Rp 0</p>
                             </div>
                         </div>
+                        <!-- Card 3: Pendapatan -->
                         <div class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md flex items-center">
                             <div class="bg-green-100 dark:bg-green-800 p-4 rounded-full mr-4">
                                 <i class="fas fa-arrow-up fa-2x text-green-500"></i>
                             </div>
-                            <div>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Pendapatan Bulan Ini</p>
-                                <p id="summary-pendapatan" class="text-2xl font-bold">Rp 0</p>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 truncate">Pendapatan Bulan Ini</p>
+                                <p id="summary-pendapatan" class="text-2xl font-bold truncate">Rp 0</p>
                             </div>
                         </div>
+                        <!-- Card 4: Biaya -->
                         <div class="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md flex items-center">
                             <div class="bg-red-100 dark:bg-red-800 p-4 rounded-full mr-4">
                                 <i class="fas fa-arrow-down fa-2x text-red-500"></i>
                             </div>
-                            <div>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Biaya Bulan Ini</p>
-                                <p id="summary-biaya" class="text-2xl font-bold">Rp 0</p>
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 truncate">Biaya Bulan Ini</p>
+                                <p id="summary-biaya" class="text-2xl font-bold truncate">Rp 0</p>
                             </div>
                         </div>
                     </div>
@@ -404,7 +407,7 @@
                             </div>
                         </div>
                         <div class="mt-8 text-center">
-                            <a href="https://wa.me/6281991810355?text=Halo%20Admin%20Sik-BUMDes,%20saya%20butuh%20bantuan." target="_blank" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 inline-flex items-center">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Sik-BUMDes,%20saya%20butuh%20bantuan." target="_blank" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 inline-flex items-center">
                                 <i class="fab fa-whatsapp mr-2"></i>Chat Administrator
                             </a>
                         </div>
@@ -1147,7 +1150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </form>
             <div class="mt-6">
                 <h3 class="text-xl font-semibold mb-4">Data Jurnal Terakhir</h3>
-                <div class="overflow-auto max-h-[400px]">
+                <div class="overflow-x-auto">
                     <table class="w-full text-left">
                         <thead class="bg-gray-100 dark:bg-gray-700 sticky top-0">
                             <tr>
